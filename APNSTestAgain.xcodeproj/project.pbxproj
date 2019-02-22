@@ -22,6 +22,7 @@
 		AA40843321F279DA0000D31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA40843621F279DA0000D31B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA40843821F279DA0000D31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA40843E21F27B170000D31B /* APNSTestAgain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APNSTestAgain.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		AA40842B21F279D70000D31B /* APNSTestAgain */ = {
 			isa = PBXGroup;
 			children = (
+				AA40843E21F27B170000D31B /* APNSTestAgain.entitlements */,
 				AA40842C21F279D70000D31B /* AppDelegate.swift */,
 				AA40842E21F279D70000D31B /* ViewController.swift */,
 				AA40843021F279D70000D31B /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					AA40842821F279D70000D31B = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,6 +289,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSTestAgain/APNSTestAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU3JN774B5;
 				INFOPLIST_FILE = APNSTestAgain/Info.plist;
@@ -300,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNSTestAgain/APNSTestAgain.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LU3JN774B5;
 				INFOPLIST_FILE = APNSTestAgain/Info.plist;
